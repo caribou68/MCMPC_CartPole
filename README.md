@@ -106,4 +106,4 @@ Output $u^*_0$ to the system as a control input.
 https://www.youtube.com/watch?v=iT0C4aqPv7o&pp=ygUOQ2FydFBvbGUgTUNNUEM%3D
 
 * Reference  
-Shintaro Nakatani, and Hisashi Date. "Swing up control of inverted pendulum on a cart with collision by monte carlo model predictive control." 2019 58th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE). IEEE, 2019.
+Shintaro Nakatani, and Hisashi Date. "Swing up control of inverted pendulum on a cart with collision by monte carlo model predictive control." 2019 58th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE). IEEE, 2019. [10.23919/SICE.2019.8859912](https://doi.org/10.23919/SICE.2019.8859912)
