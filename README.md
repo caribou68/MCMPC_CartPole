@@ -101,3 +101,9 @@ This step would improve the approximation accuracy of the estimated optimal valu
 
 7.  Apply control input  
 Output $u^*_0$ to the system as a control input.
+
+* Result movie  
+https://www.youtube.com/watch?v=iT0C4aqPv7o&pp=ygUOQ2FydFBvbGUgTUNNUEM%3D
+
+* Reference  
+Shintaro Nakatani, and Hisashi Date. "Swing up control of inverted pendulum on a cart with collision by monte carlo model predictive control." 2019 58th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE). IEEE, 2019.
