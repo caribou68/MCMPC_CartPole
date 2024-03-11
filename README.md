@@ -69,19 +69,19 @@ Evaluation value $L$ are calculated from following evaluation function,
 * Evaluation function  
   * Stage cost
     ```math
-    L_{stage} = \sum_{k=0}^{K-2} \frac{1}{2} \left\{q_0y_k^2+q_1(1-\mathrm{cos}\theta_k)+q_2\dot{y}_k^2+q_3\dot{\theta}_k^2+ru_k^2\right\},
+    L_{stage} = \sum_{k=0}^{K-2} \frac{1}{2} \left\{q_0y_k^2+q_1\frac{1-\mathrm{cos}\theta_k}{1+\mathrm{cos}\theta_k}+q_2\dot{y}_k^2+q_3\dot{\theta}_k^2+ru_k^2\right\},
     ```
   * Terminal cost
     ```math
-    L_{terminal} = \frac{1}{2} \left\{q_0y_{K-1}^2+q_1(1-\mathrm{cos}\theta_{K-1})+q_2\dot{y}_{K-1}^2+q_3\dot{\theta}_{K-1}^2\right\},
+    L_{terminal} = \frac{1}{2} \left\{q_0y_{K-1}^2+q_1\frac{1-\mathrm{cos}\theta_{K-1}}{1+\mathrm{cos}\theta_{K-1}}+q_2\dot{y}_{K-1}^2+q_3\dot{\theta}_{K-1}^2\right\},
     ```
   * Evaluation value
     ```math
-    L = \frac{1}{L_{stage}+L_{terminal}}.
+    L = L_{stage}+L_{terminal}.
     ```
 
 4. Extract elites  
-Extract M input values in descending order of evaluation value.
+Extract M input values in ascending order of evaluation value.
 
 5. Calculate weighted average  
 Calculate optimal input sequence $u_k^*$ as following weighted average,
